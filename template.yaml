@@ -4,7 +4,7 @@ Resources:
   ReadCsvFileFunction:
     Type: AWS::Serverless::Function
     Properties:
-      FunctionName: AverageValueFunction
+      FunctionName: ReadCsvFileFunction
       CodeUri: src/
       Handler: app.lambda_handler
       Runtime: python3.9
