@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  ReadCsvFileFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: AverageValueFunction
+      CodeUri: src/
+      Handler: app.lambda_handler
+      Runtime: python3.9
+      Timeout: 30
+      Role: arn:aws:iam::730335325860:role/service-role/averageValue-role-4r6qbodj
